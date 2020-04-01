@@ -1,2 +1,8 @@
 {
+    "competitive-programming-helper.firstTime": false,
+    "files.associations": {
+        "*.cc": "cpp",
+        "ostream": "cpp"
+    },
+    "python.pythonPath": "/usr/bin/python3.6"
 }
