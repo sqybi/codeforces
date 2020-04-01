@@ -50,10 +50,7 @@ int main() {
   cout.tie(nullptr);
 
   // Code here
-  cin >> total_test_cases;
-  for (int test_case = 0; test_case < total_test_cases; ++test_case) {
-
-  }
+  cout << "NO" << endl;
 
   return 0;
 }

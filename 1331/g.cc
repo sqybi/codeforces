@@ -50,9 +50,34 @@ int main() {
   cout.tie(nullptr);
 
   // Code here
-  cin >> total_test_cases;
-  for (int test_case = 0; test_case < total_test_cases; ++test_case) {
+  int n;
+  double a = 1.29889485833701E-08;
+  double b = -0.696100560287618;
+  double c = 0.606239436579983;
+  double d = 5.68918611079212;
+  double e = 0.310490506571197;
+  double f = 0.0775702899135402;
+  double g = 0.0115464265803753;
+  double h = 0.00101778432072808;
+  double i = 4.89988238278245E-05;
+  double j = 9.91393414324367E-07;
 
+  cout<<setiosflags(ios::fixed)<<setprecision(2);
+  vector<int> aa;
+  while (cin >> n) {
+    aa.pb(n);
+  }
+  cout << setiosflags(ios::fixed);
+  for (auto x = aa.rbegin(); x != aa.rend(); x++) {
+    n = *x;
+    double res = a + b * n + c * n * n + d * n * n * n + e * n * n * n * n + f * n * n * n * n * n +
+                 g * n * n * n * n * n * n + h * n * n * n * n * n * n * n + i * n * n * n * n * n * n * n * n +
+                 j * n * n * n * n * n * n * n * n * n;
+    if (n >= 2) {
+      cout << "f(" << setprecision(0) << n << ") = MAGNA NIMIS!" << endl;
+    } else {
+      cout << "f(" << setprecision(0) << n << ") = " << setprecision(2) << res << endl;
+    }
   }
 
   return 0;
