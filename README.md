@@ -1,2 +1,2 @@
-# codeforces
+# Codeforces
 Codeforces Contests
